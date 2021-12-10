@@ -1,0 +1,35 @@
+.photo-upload__header {
+  color: $blue;
+
+  line-height: 30px;
+}
+
+.photo-upload__form {
+  background-color: $greylight;
+}
+
+.photo-upload__edit {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.photo-upload__button {
+  background-color: transparent;
+  border: 3px solid $pink;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+
+  color: $pink;
+
+  &--disable {
+    border: 3px solid $blue;
+    color: $blue;
+    opacity: 0.1;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,24 @@
+.contacts {
+  color: $blue;
+}
+
+.contacts__header {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.contacts__list {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts__name {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.contacts__info {
+  color: $pink;
+  font-weight: 300;
+  font-size: 24px;
+}

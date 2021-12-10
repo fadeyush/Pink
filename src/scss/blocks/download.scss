@@ -1,0 +1,33 @@
+.download {
+  background-color: $darkblue;
+  
+    a {
+    color: $white;
+    text-decoration: none;
+    font-family: "Open Sans", "Arial", sans-serif;
+    }
+
+    button {
+      background: $darkblue;
+      border: $white solid 3px;
+    }
+}
+
+.download__list {
+  text-transform: uppercase;
+  list-style: none;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.download__info {
+  color: $white;
+  font-weight: 300;
+}
+
+.download__link {
+  font-size: 18px;
+  line-height: 18px;
+}

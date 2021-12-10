@@ -1,0 +1,21 @@
+.tariffs {
+  background-color: $greylight;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.tariffs__item {
+  background-color: $blue;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+    span {
+      font-size: 24px;
+      font-weight: 300;
+    }
+}
+
+.tariffs__condition {
+  background-color: $white;
+  color: $blue;
+}
