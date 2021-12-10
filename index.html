@@ -14,23 +14,22 @@
       <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a>Главная</a></li>
-          <li class="site-list__item"><a href="#">Фотографии</a></li>
-          <li class="site-list__item"><a href="#">Конкурс</a></li>
-          <li class="site-list__item"><a href="#">HTML Academy</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+          <li class="main-nav__item"><a href="#">Фотографии</a></li>
+          <li class="main-nav__item"><a href="#">Конкурс</a></li>
+          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
         </ul>
-        <button class="button main-nav__button" type="button">Закрыть</button>
+        <button class="main-nav__button" type="button">Закрыть</button>
         </div>
       </nav>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Главная страница приложения Пинк</h1>
-
-      <img class="" src="img/iphone-hand-mobile@1x.png">
-      
-      <section class="download">
+  
+      <section class="download background-main">
+        <img class="download__phone" src="img/iphone-hand-mobile@1x.png">
         <h2 class="visually-hidden">Ссылка на скачивание приложения</h2>
         <button class="download__button" type="button"><a class="download__link" href="itunes.store">Скачать приложение</a></button>
         <ul class="download__list download-list__wrapper">
@@ -44,10 +43,11 @@
       <section class="specification">
         <h2 class="visually-hidden">Польза от использввания приложения Pink</h2>
         <header class="specification__header">
-        <p class="specification__info-first">Устали от серости мегаполиса?</p> 
-        <p class="specification__info-second">Нам есть, что вам предложть!</p>
+        <p class="specification__info specification__info-first">Устали от серости мегаполиса?</p> 
+        <p class="specification__info specification__info-second">Нам есть, что вам предложть!</p>
         </header>
-        <ul class="specification__list specification-list__wrapper">
+        <div class="specification-list__wrapper">
+        <ul class="specification__list">
           <li class="specification__item">
             <h3 class="specification-item__name">Поднимает настроение</h3>
             <p class="specification-item__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
@@ -61,9 +61,9 @@
             <p class="specification-item__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
+        <img class="specification__photo" src="img/iphone-screen-mobile@1x.png" width="157" height="320">
+        </div>
       </section>
-
-      <img class="" src="img/iphone-screen-mobile@1x.png" width="157" height="320">
 
       <section class="review">
         <div class="slider">
@@ -140,9 +140,9 @@
         </ul>
       </section>
       <section class="page-footer__map map">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <h2 class="visually-hidden">Как до нас добраться?</h2>
+        <img src="/img/content/map-mobile@2x.jpg">
       </section>
     </footer>
-    <script src="bundle.js"></script>
   </body>
 </html>
