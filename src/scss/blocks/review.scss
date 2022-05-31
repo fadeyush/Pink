@@ -1,5 +1,17 @@
-.review__item {
+.review {
   margin: 0;
+
+  width: 320px;
+  margin: 0 auto;
+
+  text-align: center;
+  padding-top: 47px;
+}
+
+.review__item {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 35px;
 }
 
 .review__name {
@@ -12,4 +24,79 @@
 .review__info {
   color: $blue;
   line-height: 30px;
+
+  padding-top: 18px;
+}
+
+.review__span {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .review {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+
+  .review__item {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .review__info {
+    padding-bottom: 40px;
+    padding-top: 0;
+
+    font-size: 18px;
+  }
+
+  .review__name {
+    font-size: 20px;
+    order: 2;
+    padding-bottom: 35px;
+  }
+
+  span {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $blue;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    width: 940px;
+    margin: 0 auto;
+    padding-top: 190px;
+    padding-bottom: 85px;
+
+    background-image: url(/img/icon-quotes.svg);
+    background-repeat: no-repeat;
+    background-position: 433px 72px;
+
+    position: relative;
+  }
+
+  .review__item {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .review__info {
+    padding-bottom: 40px;
+  }
+
+  .review__name {
+    font-size: 24px;
+
+      span {
+        font-size: 18px;
+      }
+  }
 }

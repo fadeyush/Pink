@@ -1,16 +1,64 @@
 .download {
-  background-color: $darkblue;
-  
-    a {
+  a {
     color: $white;
     text-decoration: none;
     font-family: "Open Sans", "Arial", sans-serif;
     }
+    
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 396px;
 
-    button {
-      background: $darkblue;
-      border: $white solid 3px;
-    }
+  position: relative;
+}
+
+.download__btn {
+  border: $white solid 3px;
+  border-radius: 30px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $white;
+
+  text-decoration: none;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  padding-top: 12px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-bottom: 12px;
+  
+  margin-left: 19px;
+  margin-right: 20px;
+}
+
+.download__button-wrapper {
+  padding-top: 45px;
+  margin-bottom: 47px;
+
+  :hover {
+    background-color: $white;
+    color: $pink;
+  }
+
+  :active {
+    color: $pinklight;
+  }
+}
+
+
+.download::before {
+  content: '';
+  position: absolute;
+
+  background-image: url(/img/iphone-hand-mobile@1x.png);
+  background-repeat: no-repeat;
+
+  width: 257px;
+  height: 288px;
+
+  top: -286px;
 }
 
 .download__list {
@@ -20,14 +68,194 @@
   line-height: 32px;
   font-weight: 700;
   padding: 0;
+
+  padding-right: 58px;
+  padding-bottom: 28px;
+  padding-left: 57px;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 206px;
+  height: 56px;
 }
 
-.download__info {
-  color: $white;
-  font-weight: 300;
+.download__item {
+  min-width: 43px;
+  min-height: 47px;
 }
 
 .download__link {
   font-size: 18px;
   line-height: 18px;
+
+  font-weight: 700;
+
+  position: relative;
+
+  &--itunes::before {
+    content: '';
+    position: absolute;
+
+    width: 47px;
+    height: 56px;
+
+    background-image: url(/img/icons/logo-apple.svg);
+    background-repeat:no-repeat;
+  }
+
+  &--android::before {
+    content: '';
+    position: absolute;
+
+    width: 43px;
+    height: 47px;
+    top: 8px;
+
+    background-image: url(/img/icons/logo-android.svg);
+    background-repeat:no-repeat;
+  }
+
+  &--windows::before {
+    content: '';
+    position: absolute;
+
+    width: 44px;
+    height: 41px;
+    top: 12px;
+
+    background-image: url(/img/icons/logo-microsoft.svg);
+    background-repeat:no-repeat;
+  }
+}
+
+.download__info {
+  color: $white;
+  font-weight: 300;
+
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+
+  text-align: center;
+}
+
+
+.download__header {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    width: 620px;
+    margin: 0 auto;
+
+    background-image: url(/img/iphone-hand-tablet@1x.png);
+    background-repeat:no-repeat;
+    background-position: -38px 75px;
+  }
+
+  .download::before {
+    display: none;
+  }
+
+  .download__header {
+    display: block;
+    width: 193px;
+
+    color: $white;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    
+    margin: 0;
+    padding: 0;
+    padding-top: 102px;
+    padding-left: 54px;
+    margin-bottom: 35px;
+  }
+
+  .download__btn {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    margin: 0;
+  }
+  
+  .download__button-wrapper {
+    padding-top: 15px;
+    margin-bottom: 46px;
+  }
+  
+  .download__list {
+    margin: 0;
+    padding: 0;
+    padding-left: 46px;
+    margin-bottom: 41px;
+  }
+
+  .download__info {
+    font-size: 18px;
+
+    margin: 0;
+    padding: 0;
+    padding-right: 320px;
+    padding-left: 0px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    width: 940px;
+    margin: 0 auto;
+
+    background-image:url(/img/iphone-hand-desktop@1x.png);
+    background-position: 18px 98px;
+    background-size: 1050px 645px;
+  }
+
+  .download__header {
+    width: 236px;
+
+    font-size: 50px;
+    line-height: 55px;
+    
+    margin: 0;
+    padding: 0;
+    padding-top: 115px;
+    padding-left: 33px;
+    margin-bottom: 67px;
+  }
+
+  .download__btn {
+    font-size: 21px;
+
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .download__button-wrapper {
+    padding-top: 10px;
+    margin-bottom: 84px;
+  }
+
+  .download__list {
+    margin: 0;
+    padding: 0;
+    padding-left: 47px;
+    margin-bottom: 53px;
+  }
+
+  .download__info {
+    margin: 0;
+    padding: 0;
+    padding-right: 640px;
+    padding-bottom: 121px;
+  }
 }

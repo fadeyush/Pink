@@ -1,0 +1,69 @@
+.form__achievement {
+    background-color: $greylight;
+}
+
+.form-achievement__list {
+  margin-top: 40px;
+  padding-left: 90px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.form-achievement__item {
+  margin-bottom: 45px;
+}
+
+.form__input-chek {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.form__checkbox {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  background-color: $white;
+  border: 2px solid $grey;
+  margin-left: -70px;
+
+  &--radio {
+    border-radius: 50%;
+  }
+}
+
+.form__input-chek:checked + .form__checkbox {
+  background-image: url(/img/tick.svg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--radio {
+    background-image: url(/img/dot.png);
+  }
+}
+
+.form__input-chek:hover:not(:active) + .form__checkbox {
+  border-color: $black;
+}
+
+.form__input-chek:active + .form__checkbox {
+  border-color: $pink;
+}
+
+
+@media (min-width: $tablet-width) {
+    .form__achievement {
+        background-color: $white;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .form__achievement {
+        width: 940px;
+        height: 230px;
+
+        order: 4;
+    }
+}

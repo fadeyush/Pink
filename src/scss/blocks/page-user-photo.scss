@@ -1,13 +1,25 @@
 .page-photo__header {
-  background-color: $white;
-
   color: $blue;
 
+  width: 320px;
+  margin: 0 auto;
+
+  margin-top: 50px;
+  margin-bottom: 53px;
+
   line-height: 30px;
+  text-align: center;
+}
+ 
+.user-photo__wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .user-photo__item {
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 280px;
 
   background-color: $greylight;
 
@@ -15,6 +27,23 @@
     a {
       text-decoration: none;
     }
+
+  &--panorama {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: $greylight;
+    width: 280px;
+  }
+}
+
+.user-photo__item-panorama {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.user-photo__image--panorama {
+  width: 100%;
+  height: auto;
 }
 
 .user-photo__name {
@@ -32,6 +61,8 @@
   font-size: 12px;
   color: $pink;
   text-transform: uppercase;
+
+  padding: 0;
 }
 
 .user-photo__panorama {
@@ -42,4 +73,85 @@
 
   font-weight: 700;
   font-size: 12px;
+}
+
+#edit__range {
+  -webkit-appearance: none;
+  width: 202px;
+  height: 2px;
+  background-color: $black;
+}
+
+#edit__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  background-color: $greylight;
+  cursor: pointer;
+}
+
+#edit__range::-webkit-slider-thumb:hover {
+  background-color: $pink;
+  }
+
+@media (min-width: $tablet-width) {
+  .user-photo__wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .page-photo__header {
+    width: 440px;
+    margin: 0 auto;
+
+    margin-top: 100px;
+    margin-bottom: 80px;
+
+  
+    font-size: 18px;
+    line-height: 30px;
+  }
+  
+  .user-photo__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .user-photo__item {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 455px;
+  }
+
+  .user-photo__item-panorama {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-photo__header {
+    margin-bottom: 93px;
+    width: 880px;
+  }
+
+  .user-photo__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .user-photo__item {
+    margin-bottom: 54px;
+    height: 555px;
+  }
+
+  .user-photo__item-panorama {
+    margin-bottom: 50px;
+  }
 }

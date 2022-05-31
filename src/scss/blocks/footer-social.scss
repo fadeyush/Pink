@@ -2,3 +2,57 @@
   list-style: none;
   padding: 0;
 }
+
+.social__item {
+  width: 46px;
+  height: 46px;
+  border: 3px solid $socialbutton;
+  border-radius: 50%;
+}
+
+.social__list, 
+.social__item {
+  :hover {
+    border-color: $blue;
+  }
+
+  :active {
+    opacity: 0.1;
+  }
+}
+
+
+.social__link {
+  display: block;
+  fill: $pink;
+
+  margin: 0 auto;
+
+
+  &--twitter {
+    margin-top: 16px;
+  }
+
+  &--facebook {
+    margin-top: 12px;
+  }
+
+  &--youtube {
+    margin-top: 15px;
+    margin-left: 17px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    width: 181px;
+
+    display: flex;
+    flex-grow: grow;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

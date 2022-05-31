@@ -1,3 +1,12 @@
+.form {
+  width: 320px;
+  margin: 0 auto;
+    
+    span {
+      display: block;
+    }
+}
+
 .form__competition {
   input {
     font: inherit;
@@ -14,8 +23,6 @@
 
   ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
   }
 
   fieldset {
@@ -23,38 +30,16 @@
     border: 0;
     margin: 0;
   }
-
-  legend {
-    background-color: $greylight;
-  }
 }
 
-.main__header {
-  margin: 0;
-  
-  font-size: 24px;
-  font-weight: 300;
-  
-  color: $white;
-}
-
-
-.form-header__info {
+.form__header {
   color: $blue;
 
   line-height: 30px;
 }
 
-.form__back-white {
-  background-color: $white;
-}
-
 .form__back-greylight {
   background-color: $greylight;
-}
-
-.form-header__info {
-  margin: 0;
 }
 
 p {
@@ -97,4 +82,51 @@ p {
   color: $blue;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.main__header {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .main__header
+  {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .form__competition {
+    fieldset {
+      border: 2px solid $grey;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .form__competition {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__button {
+    order: 6;
+  }
+
+  .main__header
+  {
+    width: 940px;
+    margin: 0 auto;
+  }
 }

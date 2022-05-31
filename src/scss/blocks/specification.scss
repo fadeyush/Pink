@@ -2,13 +2,25 @@
   color: $blue;
   font-weight: 300;
     ul {
-    list-style: none;
-    padding: 0;
+      list-style: none;
   }
 }
 
-.specification__info {
+.specification__header-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.specification__header {
   font-size: 24px;
+  text-align: center;
+
+  margin-top: 46px;
+  margin-bottom: 47px;
+}
+
+.specification__info-second {
+  margin-top: 38px;
 }
 
 .specification-item__name {
@@ -18,6 +30,308 @@
   line-height: 24px;
 }
 
+.specification-item__info {
+  font-weight: 400;
+}
+
 .specification-list__wrapper {
-  background-color: $greylight;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.specification__list {
+  text-align: center;
+  padding-top: 65px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.specification__item {
+  margin-bottom: 34px;
+}
+
+.specification__photo {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 159px;
+  height: 277px;
+}
+
+br {
+  display: none;
+}
+
+.specification__item-add {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .specification__header-wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .specification__info-second {
+    margin: 0;
+  }
+  
+  .specification__header {
+    margin-top: 58px;
+    margin-bottom: 48px;
+
+    font-size: 40px;
+    line-height: 40px;
+
+    width: 620px;
+  }
+
+  .specification-list__wrapper {
+    display: flex;
+
+    width: 620px;
+    margin: 0 auto;
+    justify-content: space-between;
+    
+  }
+
+  .specification__list {
+    order: 2;
+
+    text-align: left;
+    width: 310px;
+
+    padding-top: 73px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .specification-item__name {
+    margin-bottom: 10px;
+  }
+
+  .specification__item {
+    margin-bottom: 28px;
+  }
+
+  .specification__photo {
+    margin: 0;
+
+    width: 268px;
+    height: 482px;
+  }
+
+  br {
+    display: block;
+  }
+
+  .specification__item-add {
+    display: flex;
+    width: 620px;
+    height: 336px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0;
+
+    background-image: url(/img/icon-timer.svg);
+    background-repeat: no-repeat;
+    background-size: 238px, 276px;
+    background-position: 0 59px;
+
+    .tablet {
+      display: block;
+    }
+
+    .desktop {
+      display: none;
+    }
+    
+    .specification-item__name {
+      font-size: 30px;
+      line-height: 36px;
+
+      width: 170px;
+    }
+
+      h3 {
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        margin: 0;
+        padding: 0;
+        text-decoration: underline;
+        color: $pink;
+        font-weight: 400;
+      }
+
+      .item-add__wrapper {
+        width: 310px;
+        margin-top: 102px;
+      }
+
+      .specification-item__info {
+        width: 297px;
+      }
+  }
+
+  .timer {
+    color: $pink;
+    font-size: 96px;
+    line-height: 90px;
+    font-weight: 700;
+
+    margin-top: 115px;
+    margin-left: 17px;
+
+    padding-left: 33px;
+    padding-top: 32px;
+
+    width: 140px;
+    height: 140px;
+
+    border: 15px solid $pink;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .specification__header-wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .specification__header {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 74px;
+
+    font-size: 50px;
+    line-height: 50px;
+
+    width: 820px;
+  }
+
+  .specification__photo {
+    display: none;
+  }
+
+  .specification-list__wrapper {
+    display: block;
+    margin: 0 auto;
+    width: 940px;
+  }
+
+  .specification__list {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+
+    display: flex;
+    width: 880px;
+    justify-content: space-between;
+  }
+
+  .specification-item__name {
+    font-size: 30px;
+    line-height: 30px;
+
+    margin-bottom: 27px;
+  }
+
+  .specification-item__info {
+    font-size: 18px;
+    line-height: 30px;
+  } 
+
+  .specification__item {
+    margin: 0;
+    text-align: center;
+
+    width: 248px;
+
+    padding-top: 362px;
+    
+    background-repeat: no-repeat;
+    background-position: -20px 45px;
+
+    &--first {
+      background-image: url(/img/iphone-screen-1-desktop@1x.png)
+    }
+
+    &--second {
+      background-image: url(/img/iphone-screen-2-desktop@1x.png)
+    }
+
+    &--third {
+      background-image: url(/img/iphone-screen-3-desktop@1x.png)
+    }
+  }
+  
+  br {
+    display: none;
+  }
+
+  .specification__item-add {
+    width: 940px;
+    margin: 0 auto;
+
+    height: 480px;
+
+
+    background-size: 298px, 345px;
+    background-position: 0 59px;
+
+
+    .desktop {
+      display: block;
+    }
+
+    .specification-item__name {
+      font-size: 30px;
+      line-height: 30px;
+
+      margin-bottom: 25px;
+
+      width: 420px;
+    }
+
+    a {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    .item-add__wrapper {
+      width: 570px;
+      margin-top: 160px;
+    }
+
+    .specification-item__info {
+      width: 526px;
+
+      margin-bottom: 35px;
+    }
+  }
+
+  .timer {
+    font-size: 120px;
+
+    border-width: 17px;
+
+    padding-left: 40px;
+    padding-top: 57px;
+
+
+    margin-left: 22px;
+    margin-top: 127px;
+
+    width: 180px;
+    height: 163px;
+
+  }
+
+  .tablet {
+    display: none;
+  }
 }

@@ -1,3 +1,44 @@
 .page-header {
+  margin: 0 auto;
+
   background-color: $blue;
+
+  &--photo {
+    min-height: 237px;
+  }
+
+  &--form {
+    min-height: 237px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    &--photo {
+      min-height: 440px;
+    }
+
+    &--form {
+      min-height: 440px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    background: transparent;
+    min-height: 853px;
+
+    &--photo {
+      min-height: 395px;
+    }
+
+    &--form {
+      min-height: 395px;
+    }
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
 }

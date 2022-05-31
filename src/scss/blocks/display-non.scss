@@ -1,0 +1,43 @@
+.mobile-non-table {
+  display: none;
+}
+
+.tablet-non {
+  display: none;
+}
+
+.desktop-non {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .mobile-non-table {
+    display: table-cell;
+  }
+  
+  .mobile-only {
+    display: none;
+  }
+
+  .tablet-non {
+        display: none;
+  }
+
+  .desktop-non {
+    display: none;
+  }
+}
+  
+  @media (min-width: $desktop-width) {
+  .mobile-non {
+    display: block;
+  }
+
+  .tablet-non {
+        display: block;
+  }
+
+  .desktop-non {
+    display: none;
+  }
+}
