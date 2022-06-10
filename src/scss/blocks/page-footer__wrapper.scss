@@ -20,6 +20,7 @@
 
 .page-footer__logo,
 .logo-pink-blue {
+  margin-bottom: 40px;
   :hover {
     fill: $pink;
   }
@@ -42,6 +43,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  .page-footer__logo,
+.logo-pink-blue {
+  margin-bottom: 0;
+  
+}
 }
 
 @media (min-width: $desktop-width) {

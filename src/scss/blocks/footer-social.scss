@@ -1,6 +1,13 @@
 .social__list {
   list-style: none;
   padding: 0;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  width: 181px;
+  display: flex;
+  flex-grow: grow;
+  justify-content: space-between;
 }
 
 .social__item {
@@ -45,11 +52,7 @@
 
 @media (min-width: $tablet-width) {
   .social__list {
-    width: 181px;
-
-    display: flex;
-    flex-grow: grow;
-    justify-content: space-between;
+    margin-bottom: 0;
   }
 }
 

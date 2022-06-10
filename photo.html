@@ -3,14 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Pink</title>
+  <title>Pink photo</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header class="page-header background-main">
-
+  <header class="page-header--photo background-main">
 
     <div class="background__nav">
 
@@ -101,9 +100,9 @@
           </div>
 
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="/photo.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a href="index.html">Главная</a></li>
+            <li class="main-nav__item main-nav__item--active"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
             <li class="main-nav__item"><a href="#">HTML Academy</a></li>
           </ul>
 
@@ -113,208 +112,275 @@
 
     </div>
 
-    <div class="background__download">
-
-      <section class="download">
-
-        <div class="download__wrapper">
-
-          <h2 class="visually-hidden">Ссылка на скачивание приложения</h2>
-          <h3 class="download__header">Взгляните на жизнь иначе!</h3>
-          <div class="download__button-wrapper">
-            <a class="download__btn" href="#">Скачать приложение</a>
-          </div>
-          <ul class="download__list download-list__wrapper">
-            <li class="download__item"><a class="download__link download__link--itunes" href="itunes.store"><span
-                  class="visually-hidden">Itunes</span></a>
-            </li>
-            <li class="download__item"><a class="download__link download__link--android" href="android.store"><span
-                  class="visually-hidden">Android</span></a></li>
-            <li class="download__item"><a class="download__link download__link--windows" href="windows.store"><span
-                  class="visually-hidden">Windows</span></a></li>
-          </ul>
-          <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
-
-    </div>
-
-    </div>
-
+    <h1 class="main-page-photo__header">Фотографии <br> пользователей</h1>
 
   </header>
 
-  <main class="page-main">
-    <h1 class="visually-hidden">Главная страница приложения Пинк</h1>
+  <main class="page-photo">
 
-    <section class="specification">
-      <h2 class="visually-hidden">Польза от использввания приложения Pink</h2>
-      <div class="specification__header-wrapper">
-        <header class="specification__header">
-          <p class="specification__info-first">Устали от серости мегаполиса?</p>
-          <p class="specification__info-second">Нам есть, что вам <br> предложть!</p>
-        </header>
+    <section class="page-photo__users">
+
+      <header class="page-photo__header">Взгляните на фотографии, которые выкладывают пользователи!
+        <br class="tablet-non">Видите, как не хватает ваших?</header>
+
+      <blockquote class="user-photo__item-panorama">
+        <div class="user-photo__wrapper">
+          <span class="user-photo__panorama">Панорама дня</span>
+        </div>
+
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/content/panorama-desktop@1x.jpg" width="300" height="400">
+          <source media="(min-width: 660px)" srcset="img/content/panorama-tablet@1x.jpg" height="509">
+          <img class="user-photo__image--panorama" src="img/content/panorama-desktop@1x.jpg"
+            alt="Панорама дня от пользователя Анна" width="280" height="180">
+        </picture>
+
+
+        <div class="panorama__wrapper">
+          <div class="user-photo__item-wrapper--panorama">
+
+            <cite class="user-photo__name">Анна</cite>
+            <time class="user-photo__time">(5 минут назад)</time>
+            <p class="user-photo__info">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию
+              в перископе, задавайте свои вопросы!</p>
+            <button class="user-photo__like user-photo__like--panorama">Нравится: 215</button>
+          </div>
+        </div>
+
+      </blockquote>
+
+
+      <div class="user-photo__wrapper">
+
+        <blockquote class="user-photo__item">
+          <a href="#" class="user-photo__photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/content/photo-car-desktop@1x.jpg" width="300"
+                height="400">
+              <source media="(min-width: 660px)" srcset="img/content/photo-car-tablet@1x.jpg" width="300" height="300">
+              <img class="user-photo__image" src="img/content/photo-car-mobile@1x.jpg" alt="Фото от пользователя Левон"
+                width="280" height="180">
+            </picture>
+          </a>
+          <div class="user-photo__item-wrapper">
+            <div class="photo__item-wrapper">
+              <cite class="user-photo__name">Левон</cite>
+              <time class="user-photo__time">(5 часов назад)</time>
+              <p class="user-photo__info">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            </div>
+            <button class="user-photo__like">Нравится: 356</button>
+          </div>
+        </blockquote>
+
+        <blockquote class="user-photo__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/content/photo-drumset-desktop@1x.jpg" width="300"
+              height="400">
+            <source media="(min-width: 660px)" srcset="img/content/photo-drumset-tablet@1x.jpg" height="509">
+            <img class="user-photo__image" src="img/content/photo-drumset-mobile@1x.jpg"
+              alt="Фото от пользователя Антон" width="280" height="180">
+          </picture>
+          <div class="user-photo__item-wrapper">
+            <div class="photo__item-wrapper">
+              <cite class="user-photo__name">Антон</cite>
+              <time class="user-photo__time">(12 часов назад)</time>
+              <p class="user-photo__info">Сосоеди будут рады!</p>
+            </div>
+            <button class="user-photo__like">Нравится: 666</button>
+          </div>
+        </blockquote>
+
+        <blockquote class="user-photo__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/content/photo-window-desktop@1x.jpg" width="300"
+              height="400">
+            <source media="(min-width: 660px)" srcset="img/content/photo-window-tablet@1x.jpg" height="509">
+            <img class="user-photo__image" src="img/content/photo-window-mobile@1x.jpg" alt="Фото от пользователя Борис"
+              width="280" height="180">
+          </picture>
+          <div class="user-photo__item-wrapper">
+            <div class="photo__item-wrapper">
+              <cite class="user-photo__name">Борис</cite>
+              <time class="user-photo__time">(20 часов назад)</time>
+              <p class="user-photo__info">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            </div>
+            <button class="user-photo__like">Нравится: 215</button>
+          </div>
+
+        </blockquote>
+
+        <blockquote class="user-photo__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/content/photo-fair-desktop@1x.jpg" width="300" height="400">
+            <source media="(min-width: 660px)" srcset="img/content/photo-fair-tablet@1x.jpg" height="509">
+            <img class="user-photo__image" src="img/content/photo-fair-mobile@1x.jpg" alt="Фото от пользователя Сергей"
+              width="280" height="180">
+          </picture>
+          <div class="user-photo__item-wrapper">
+            <div class="photo__item-wrapper">
+              <cite class="user-photo__name">Сергей</cite>
+              <time class="user-photo__time">(25 часов назад)</time>
+              <p class="user-photo__info">Самая кубанская в мире!</p>
+            </div>
+            <button class="user-photo__like">Нравится: 4</button>
+          </div>
+        </blockquote>
+
+        <blockquote class="user-photo__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/content/photo-pov-desktop@1x.jpg" width="300" height="400">
+            <source media="(min-width: 660px)" srcset="img/content/photo-pov-tablet@1x.jpg" height="509">
+            <img class="user-photo__image" src="img/content/photo-pov-mobile@1x.jpg" alt="Фото от пользователя Максим"
+              width="280" height="180">
+          </picture>
+          <div class="user-photo__item-wrapper">
+            <div class="photo__item-wrapper">
+              <cite class="user-photo__name">Максим</cite>
+              <time class="user-photo__time">(40 часов назад)</time>
+              <p class="user-photo__info">Где снег-то?</p>
+            </div>
+            <button class="user-photo__like">Нравится: 150</button>
+          </div>
+        </blockquote>
+
+        <blockquote class="user-photo__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/content/photo-wing-desktop@1x.jpg" width="300" height="400">
+            <source media="(min-width: 660px)" srcset="img/content/photo-wing-tablet@1x.jpg" height="509">
+            <img class="user-photo__image" src="img/content/photo-wing-mobile@1x.jpg" alt="Фото от пользователя Надежда"
+              width="280" height="180">
+          </picture>
+          <div class="user-photo__item-wrapper">
+            <div class="photo__item-wrapper">
+              <cite class="user-photo__name">Надежда</cite>
+              <time class="user-photo__time">(45 часов назад)</time>
+              <p class="user-photo__info">Всем GM и взаимные лайки!</p>
+            </div>
+            <button class="user-photo__like">Нравится: 2560</button>
+          </div>
+        </blockquote>
+        </div>
+    </section>
+
+
+    <section class="page-photo__upload photo-upload">
+      <div class="photo-upload__wrapper">
+        <h2 class="visually-hidden">Загрузка своего фото</h2>
+        <header class="photo-upload__header">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</header>
       </div>
-
       <div class="background-greylight">
-        <div class="specification-list__wrapper">
-          <ul class="specification__list">
-            <li class="specification__item specification__item--first">
-              <h3 class="specification-item__name">Поднимает настроение</h3>
-              <p class="specification-item__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально
-                в несколько кликов!</p>
-            </li>
-            <li class="specification__item specification__item--second">
-              <h3 class="specification-item__name">Меняет мир вокруг</h3>
-              <p class="specification-item__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-                <br class="tablet"> усилить эффект</p>
-            </li>
-            <li class="specification__item specification__item--third">
-              <h3 class="specification-item__name">Заводит новых друзей</h3>
-              <p class="specification-item__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-                заводите новых</p>
-            </li>
-          </ul>
-          <img class="specification__photo" src="img/iphone-screen-3-tablet@2x.png" width="157" height="320">
-        </div>
-      </div>
 
-      <div class="item-add__background">
-        <div class="specification__item-add">
-          <p class="timer">24</p>
-          <div class="item-add__wrapper">
-            <h3 class="specification-item__name">Эффект на 24 часа!</h3>
-            <p class="specification-item__info">Британские ученые провели исследования и доказали, <br class="desktop">
-              что положительный эффект <br class="tablet"> от использования приложения длится целые сутки!</p>
-            <a class="specification-item__article">Узнать больше об исследовании</a>
+        <form class="photo-upload__form" method="post">
+
+          <img class="photo-upload__image" src="img/photo-road-mobile@1x.jpg" alt="Фото из вашего телефона">
+
+          <div class="photo-upload-wrapper">
+            <fieldset class="photo-upload__edit edit__list">
+              <legend class="visually-hidden">Редактирование</legend>
+
+              <div class="edit__mobile-only">
+
+                <div class="edit__ikon-wrapper">
+                  <svg class="edit__ikon ikon__crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlik="http://www.w3.org/1999/xlink" x="0px" y="0px" width="44px" height="44px"
+                    viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z" />
+                    <path
+                      d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
+                  </svg>
+                  <span class="visually-hidden">Обрезка</span>
+                </div>
+
+                <div class="edit__ikon-wrapper--active">
+                  <svg class="edit__ikon--active ikon__fill" version="1.0" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48"
+                    xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z" />
+                    <path
+                      d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
+                    <rect y="40" width="48" height="3" />
+                  </svg>
+                  <span class="visually-hidden">Насыщенность</span>
+                </div>
+
+                <div class="edit__ikon-wrapper">
+                  <svg class="edit__ikon ikon__contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px"
+                    viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
+                    xml:space="preserve">
+                    <path
+                      d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
+                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
+                  </svg>
+                  <span class="visually-hidden">Контраст</span>
+                </div>
+
+              </div>
+
+              <div class="edit__item-wrapper edit__item-wrapper--hidden edit__mobile-hidden  edit__item-wrapper--top">
+                <div class="edit__ikon-wrapper--active ikon__crop">
+                  <svg class="edit__ikon ikon__crop" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlik="http://www.w3.org/1999/xlink" x="0px" y="0px" width="44px" height="44px"
+                    viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z" />
+                    <path
+                      d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z" />
+                  </svg>
+                  <span class="visually-hidden">Обрезка</span>
+                </div>
+                <input class="edit__item edit__item--hidden" type="range" value="75" id="edit__range">
+              </div>
+
+              <div class="edit__item-wrapper">
+                <div class="edit__ikon-wrapper--active edit__mobile-hidden ikon__fill">
+                  <svg class="edit__ikon--active ikon__fill" version="1.0" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48"
+                    xml:space="preserve">
+                    <path fill="none" d="M0,0h48v48H0V0z" />
+                    <path
+                      d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z" />
+                    <rect y="40" width="48" height="3" />
+                  </svg>
+                  <span class="visually-hidden">Насыщенность</span>
+                </div>
+                <input class="edit__item" type="range" value="20" id="edit__range">
+              </div>
+
+              <div class="edit__item-wrapper edit__item-wrapper--hidden edit__mobile-hidden edit__item-wrapper--bottom">
+                <div class="edit__ikon-wrapper--active ikon__contrast">
+                  <svg class="edit__ikon ikon__contrast" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px"
+                    viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92"
+                    xml:space="preserve">
+                    <path
+                      d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z" />
+                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519" />
+                  </svg>
+                  <span class="visually-hidden">Контраст</span>
+                </div>
+                <input class="edit__item edit__item--hidden" type="range" value="60" id="edit__range">
+              </div>
+
+            </fieldset>
+
+            <div class="upload__button-wrapper">
+              <button class="photo-upload__button submit" type="button">Запостить</button>
+              <button class="photo-upload__button--disable cancel" type="reset">Отмена</button>
+            </div>
+
           </div>
-        </div>
-      </div>
 
+        </form>
+
+      </div>
     </section>
-
-    <section class="review">
-      <div class="slider">
-        <h2 class="visually-hidden">Отзывы приложения Pink</h2>
-        <div class="review__list">
-          <blockquote class="review__item slider__item">
-            <cite class="review__name">Николай Петров <span class="review__span">25 дет, водитель трамвая</span></cite>
-            <p class="review__info">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
-              серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
-        </div>
-
-        <div class="slider">
-
-          <div class="review__slider slider__list">
-            <button type="button" class="slider__toggle--active">
-              <span class="visually-hidden">1</span>
-            </button>
-            <button type="button" class="slider__toggle">
-              <span class="visually-hidden">2</span>
-            </button>
-            <button type="button" class="slider__toggle">
-              <span class="visually-hidden">3</span>
-            </button>
-          </div>
-
-          <div class="arrow__slider">
-            <button class="arrow__toggle arrow__left">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="41" viewBox="0 0 22 41">
-                <path
-                  d="M2.045 20.859L21.458 1.446A.847.847 0 0 0 20.261.248L.248 20.261a.846.846 0 0 0 0 1.197l20.013 20.013a.843.843 0 0 0 1.198 0 .847.847 0 0 0 0-1.198L2.045 20.859z" />
-                </svg>
-              </svg>
-              <span class="visually-hidden">предыдущий отзыв</span>
-            </button>
-
-            <button class="arrow__toggle arrow__right">
-              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="41" viewBox="0 0 22 41">
-                <path
-                  d="M19.661 20.859L.248 1.446A.847.847 0 0 1 1.445.248L21.458 20.26c.33.33.33.867 0 1.197L1.445 41.471a.843.843 0 0 1-1.198 0 .847.847 0 0 1 0-1.198l19.414-19.414z" />
-                </svg>
-              </svg>
-              <span class="visually-hidden">следующий отзыв</span>
-            </button>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-    <div class="background-greylight">
-      <section class="tariffs">
-        <div class="slider">
-
-          <table class="tariffs__list">
-            <caption class="visually-hidden">Тарифы приложения Pink</caption>
-            <tr>
-              <td class="mobile-non-table"></td>
-              <th class="tariffs__item tariffs__item-right">База <span class="tariffs__price">1,99 USD</span></th>
-              <th class="tariffs__item tariffs__item-right">Стандарт <span class="tariffs__price">3,99 USD</span></th>
-              <th class="tariffs__item">Анлим <span class="tariffs__price">9,99 USD</span></th>
-            </tr>
-            <tr>
-              <td class="tariffs__condition mobile-non-table">Розовый фильтр</td>
-              <td class="tariffs__condition tariffs__condition--yes"><span class="mobile-only">Розовый фильтр</span>
-              </td>
-              <td class="tariffs__condition tariffs__condition--yes"><span class="mobile-only">Розовый фильтр</span>
-              </td>
-              <td class="tariffs__condition tariffs__condition--yes"><span class="mobile-only">Розовый фильтр</span>
-              </td>
-            </tr>
-            <tr>
-              <td class="tariffs__condition mobile-non-table">Смайлики</td>
-              <td class="tariffs__condition tariffs__condition--no"><span class="mobile-only">Смайлики</span></td>
-              <td class="tariffs__condition tariffs__condition--yes"><span class="mobile-only">Смайлики</span></td>
-              <td class="tariffs__condition tariffs__condition--yes"><span class="mobile-only">Смайлики</span></td>
-            </tr>
-            <tr>
-              <td class="tariffs__condition mobile-non-table">Комметарии</td>
-              <td class="tariffs__condition tariffs__condition--no"><span class="mobile-only">Комметарии</span></td>
-              <td class="tariffs__condition tariffs__condition--no"><span class="mobile-only">Комметарии</span></td>
-              <td class="tariffs__condition tariffs__condition--yes"><span class="mobile-only">Комметарии</span></td>
-            </tr>
-          </table>
-
-          <p class="tariffs__slider slider__list">
-            <button type="button" class="slider__toggle"><span class="visually-hidden">1</span></button>
-            <button type="button" class="slider__toggle--active"><span class="visually-hidden">2</span></button>
-            <button type="button" class="slider__toggle"><span class="visually-hidden">3</span></button>
-          </p>
-        </div>
-      </section>
-    </div>
-
   </main>
 
   <footer class="page-footer">
 
-    <section class="page-footer__contacts contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <p class="contacts__header">Остались вопросы? Свяжитесь с нами!</p>
-      <ul class="contacts__list">
-        <li class="contacts__item contacts__item-first">
-          <h3 class="contacts__name">Звоните:</h3>
-          <p class="contacts__info">+7 (812) 555-66-66</p>
-        </li>
-        <li class="contacts__item contacts__item-second">
-          <h3 class="contacts__name">Пишите:</h3>
-          <p class="contacts__info">mail@htmlacademy.ru</p>
-        </li>
-        <li class="contacts__item contacts__item-third">
-          <h3 class="contacts__name">Приезжайте в гости:</h3>
-          <p class="contacts__info">ул. Большая <br> Конюшенная, 19/8</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="page-footer__map map">
-      <h2 class="visually-hidden">Как до нас добраться?</h2>
-      <img src="/img/content/map-tablet@1x.jpg">
-    </section>
-
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper page-footer__wrapper--photo">
 
       <a class="page-footer__logo" href="index.html">
 
