@@ -6,7 +6,15 @@
   display: none;
 }
 
+.tablet-no {
+  display: block;
+}
+
 .desktop-non {
+  display: none;
+}
+
+.mobile-non {
   display: none;
 }
 
@@ -19,19 +27,20 @@
     display: none;
   }
 
-  .tablet-non {
+  .tablet-no {
         display: none;
   }
 
   .desktop-non {
     display: none;
   }
+
+  .mobile-non {
+    display: inline-block;
+  }
 }
   
-  @media (min-width: $desktop-width) {
-  .mobile-non {
-    display: block;
-  }
+@media (min-width: $desktop-width) {
 
   .tablet-non {
         display: block;

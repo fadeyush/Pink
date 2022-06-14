@@ -1,8 +1,47 @@
+.form__review {
+    width: 280px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 42px;
+
+    order: 2;
+}
+
+.form-review__header {
+    display: block;
+    padding: 0;
+    padding-top: 40px;
+    text-align: center;
+}
+.form-review__info {
+    color: #283645;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    height: 197px;
+}
+
+@media (min-width: $tablet-width) {
+    .form__review {
+        width: 520px;
+        padding: 50px;
+
+        order: 0;
+
+        margin-bottom: 70px;
+    }
+
+    .form-review__info{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
 @media (min-width: $desktop-width) {
     .form__review {
         width: 940px;
         height: 215px;
-
-        order: 5;
     }
 }

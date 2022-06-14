@@ -1,5 +1,13 @@
 .form__apps {
-    background-color: $greylight;
+    width: 320px;
+    margin: 0 auto;
+
+    padding: 0;
+    padding-bottom: 5px;
+}
+
+.apps-order {
+    order: 1;
 }
 
 .form-apps__list {
@@ -11,27 +19,55 @@
 
 .form-apps__item {
     margin-bottom: 45px;
-  }
-  
-legend {
-    background-color: $greylight;
-  }
+}
 
-@media (min-width: $tablet-width) {
-    .form__apps {
+.form__legend-competition {
+    text-transform: uppercase;
+    color: $pink;
+
+    line-height: 18px;
+    padding-left: 33px;
+    padding-right: 33px;
+
+    background-color: $greylight;
+
+    &--rev {
         background-color: $white;
     }
 
-    legend {
+    &--contacts {
         background-color: $white;
-      }
+        display: none;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .form__apps {
+        width: 620px;
+
+        margin-bottom: 50px;
+    }
+
+    .apps-order {
+        order: 0;
+    }
+
+    .form-apps__list {
+        padding-left: 130px;
+    }
+
+    .form__legend-competition {
+        background-color: $white;
+
+        &--contacts {
+            display: inline-block;
+        }
+    }
 }
 
 @media (min-width: $desktop-width) {
     .form__apps {
-        width: 375px;
+        width: 440px;
         height: 300px;
-
-        order: 2;
     }
-  }
+}

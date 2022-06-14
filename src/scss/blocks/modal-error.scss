@@ -1,0 +1,10 @@
+.modal-error__close {
+  padding-bottom: 50px;
+}
+
+@media (min-width: $desktop-width) {
+  .modal-error__close {
+    background-color: $grey;
+    padding-top: 50px;
+  }
+}

@@ -1,17 +1,6 @@
-.modal-sent {
-  background-color: $greylight;
-}
+.modal-sent__close {
+  background-color: $grey;
 
-.modal-sent__wrapper {
-  background-color: $white;
-}
-
-.modal__info {
-  color: $blue;
-}
-
-.modal__header {
-  font-weight: 700;
-  font-size: 18px;
-  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }

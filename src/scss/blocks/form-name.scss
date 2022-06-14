@@ -1,8 +1,41 @@
+.form__name-info {
+    width: 280px;
+    margin: 0 auto;
+
+    order: -2;
+
+    margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+    .form__name-info {
+        width: 620px;
+
+        order: 0;
+
+        margin-bottom: 50px;
+    }
+
+    .label__name {
+        padding: 0;
+    }
+
+    .input__name {
+        width: auto;
+
+        margin-left: 22px;
+        flex-grow: 1;
+    }
+}
+
 @media (min-width: $desktop-width) {
     .form__name-info {
         width: 434px;
         height: 300px;
-
-        order: 1;
+        margin: 0;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 }

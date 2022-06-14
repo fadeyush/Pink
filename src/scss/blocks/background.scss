@@ -19,6 +19,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .background-greylight {
+    &--form {
+      background-color: $white;
+    }
+  }
+
   .background-main {
     background-image: url(/img/bg-back-tablet@1x.jpg);
   }
