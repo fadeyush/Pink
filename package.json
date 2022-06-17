@@ -12,9 +12,13 @@
   "author": "Anna Fadeeva",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
     "mini-css-extract-plugin": "^2.4.6",
     "node-sass": "^6.0.1",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
     "sass-loader": "^12.4.0",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"

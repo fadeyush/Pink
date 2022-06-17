@@ -17,6 +17,7 @@ module.exports = {
 				miniCss.loader,
 				'css-loader',
 				'sass-loader',
+				"postcss-loader",
 			]
 		}]
 	},
@@ -24,5 +25,6 @@ module.exports = {
 		new miniCss({
 			filename: '../style.css',
 		}),
+		require('autoprefixer')
 	]
 };
