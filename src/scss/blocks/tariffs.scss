@@ -6,6 +6,7 @@
   padding-bottom: 45px;
 
   text-align: center;
+  overflow: hidden;
 }
 
 .tariffs__list {
@@ -86,12 +87,13 @@
   border-right: 2px solid $white;
 }
 
+
 @media (min-width: $tablet-width) {
   .tariffs {
-    width: 620px;
     margin: 0 auto;
 
     padding-bottom: 70px;
+    overflow: visible;
   }
 
   .tariffs__list {
@@ -140,7 +142,6 @@
 
 @media (min-width: $desktop-width) {
   .tariffs {
-    width: 940px;
     margin: 0 auto;
 
     padding-bottom: 97px;

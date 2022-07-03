@@ -1,0 +1,36 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: $black;
+
+  background-color:$white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    background-size: 620px auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background-size: 940px auto;
+  }
+}

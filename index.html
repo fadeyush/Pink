@@ -224,7 +224,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="41" viewBox="0 0 22 41">
                 <path
                   d="M2.045 20.859L21.458 1.446A.847.847 0 0 0 20.261.248L.248 20.261a.846.846 0 0 0 0 1.197l20.013 20.013a.843.843 0 0 0 1.198 0 .847.847 0 0 0 0-1.198L2.045 20.859z" />
-                </svg>
+              </svg>
               </svg>
               <span class="visually-hidden">предыдущий отзыв</span>
             </button>
@@ -233,7 +233,7 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="41" viewBox="0 0 22 41">
                 <path
                   d="M19.661 20.859L.248 1.446A.847.847 0 0 1 1.445.248L21.458 20.26c.33.33.33.867 0 1.197L1.445 41.471a.843.843 0 0 1-1.198 0 .847.847 0 0 1 0-1.198l19.414-19.414z" />
-                </svg>
+              </svg>
               </svg>
               <span class="visually-hidden">следующий отзыв</span>
             </button>
@@ -313,7 +313,10 @@
 
     <section class="page-footer__map map">
       <h2 class="visually-hidden">Как до нас добраться?</h2>
-      <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1655462565456!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="footer__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1655462565456!5m2!1sru!2sru"
+        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <div class="page-footer__wrapper">
@@ -432,9 +435,9 @@
   </footer>
 
   <script>
-  const navToggle = document.querySelector(".page-header__toggle");
+    const navToggle = document.querySelector(".page-header__toggle");
     const navMain = document.querySelector(".main-nav");
-    
+
     navToggle.addEventListener("click", function () {
       if (navMain.classList.contains("main-nav--closed")) {
         navMain.classList.remove("main-nav--closed");
@@ -443,8 +446,9 @@
         navMain.classList.add("main-nav--closed");
         navMain.classList.remove("main-nav--opened");
       }
-    });</script>
-  
+    });
+  </script>
+
 
 </body>
 
