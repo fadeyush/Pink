@@ -8,10 +8,23 @@
   padding-top: 47px;
 }
 
+.review__list {
+  min-height: 263px;
+}
+
+.review__wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 280px;
+  margin: 0 auto;
+}
+
 .review__item {
   width: 280px;
   margin: 0 auto;
   margin-bottom: 35px;
+
+  transition: all 500ms ease-in-out;
 }
 
 .review__name {
@@ -38,6 +51,18 @@
     width: 620px;
     margin: 0 auto;
     padding-top: 100px;
+  }
+
+  .review__span {
+    display: block;
+  }
+
+  .review__list {
+    min-height: 225px;
+  }
+
+  .review__wrapper {
+    width: 620px;
   }
 
   .review__item {
@@ -83,6 +108,10 @@
     position: relative;
   }
 
+  .review__wrapper {
+    width: 700px;
+  }
+
   .review__item {
     width: 700px;
     margin: 0 auto;
@@ -95,8 +124,8 @@
   .review__name {
     font-size: 24px;
 
-      span {
-        font-size: 18px;
-      }
+    span {
+      font-size: 18px;
+    }
   }
 }

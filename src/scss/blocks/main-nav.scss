@@ -44,6 +44,10 @@
   background-color: transparent;
 }
 
+.main-nav {
+  transition: all 500ms ease-in-out;
+}
+
 .main-nav--closed .page-header__toggle::before {
   content: "";
 
@@ -70,6 +74,7 @@
 } 
 
 .main-nav--opened .page-header__toggle {
+  transition: all 500ms ease-in-out;
   &::before,
   &::after {
     content: " ";
@@ -158,8 +163,6 @@
   width: 320px;
   margin: 0 auto;
 }
-
-
 
 @media (min-width: $tablet-width) {
   .main-nav__wrapper {

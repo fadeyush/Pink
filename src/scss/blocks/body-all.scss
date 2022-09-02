@@ -23,6 +23,14 @@ ul {
   padding: 0;
 }
 
+.show {
+  display: block
+}
+
+.hide {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   body {
     background-size: 620px auto;
