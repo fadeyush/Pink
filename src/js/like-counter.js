@@ -29,9 +29,4 @@ function counterOfLikes() {
     })
 }
 
-    
-        
-
-        
-
 module.exports = counterOfLikes;

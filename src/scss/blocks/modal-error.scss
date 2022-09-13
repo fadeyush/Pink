@@ -2,7 +2,28 @@
   padding-bottom: 50px;
 }
 
+.modal-error {
+  position: absolute;
+  
+  left: 50%;
+  margin: -140px;
+  bottom: 230px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-error {
+    margin: -230px;
+    bottom: 350px;
+  }
+}
+
+
 @media (min-width: $desktop-width) {
+  .modal-error {
+    margin: -390px;
+    bottom: 500px;
+  }
+
   .modal-error__close {
     background-color: $grey;
     padding-top: 50px;

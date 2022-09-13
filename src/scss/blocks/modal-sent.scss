@@ -4,3 +4,25 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+.modal-sent {
+  position: absolute;
+  
+  left: 50%;
+  margin: -140px;
+  bottom: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-sent {
+    margin: -230px;
+    bottom: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-sent {
+    margin: -390px;
+    bottom: 500px;
+  }
+}
