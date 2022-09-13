@@ -9,8 +9,8 @@ import sentForm from './js/form';
 
 window.addEventListener('DOMContentLoaded', () => {
     showNav();
+    showReview();
     sentForm();
     counterOfLikes();
-    showReview();
 });
 
