@@ -44,7 +44,7 @@ function sentForm() {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
-        if ((userMail.value !== ' ' && userMail.value !== null) && (userName.value !== ' ' && userName.value !== null) && userSurname.value !== ' ') {
+        if ((userMail.value !== ' ' && userMail.value !== '') && (userName.value !== ' ' && userName.value !== '') && (userSurname.value !== ' ' && userSurname.value !== '')) {
             postData(form);
         } else {
             fail.classList.add('modal--open');
