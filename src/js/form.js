@@ -19,20 +19,9 @@ function sentForm() {
     
             const json = JSON.stringify(Object.fromEntries(formData.entries()));
     
-            const getResource = async (url) => {
-                const res = await fetch(url);
-    
-                if (res.ok) {
-                    console.log(json);
-                    success.classList.add('modal--open');
-                }
-    
-                return await res.json();
-            };
-    
-            const url = 'https://postform.free.beeceptor.com';
-    
-            getResource(url);
+           
+            console.log(json);
+            success.classList.add('modal--open');
     
             form.reset();
         }
